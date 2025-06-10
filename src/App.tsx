@@ -9,7 +9,7 @@ import { Feedback } from "./routes/feedback";
 
 const App = () => {
   return (
-    <Router>
+    <Router basename="/Linkup-Ai-dash"> {/* أضف basename هنا وغيّر "Linkup-Ai-dash" ليطابق اسم الـ repository */}
       <Routes>
         {/* توجيه المستخدم إلى صفحة /generate افتراضيًا */}
         <Route path="/" element={<Navigate to="/generate" replace />} />
